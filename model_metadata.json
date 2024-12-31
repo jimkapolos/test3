@@ -1,0 +1,23 @@
+{
+    "function_name": "create_lstm_model",
+    "framework": "TensorFlow",
+    "description": "An LSTM model for sequence prediction",
+    "parameters": {
+        "n_steps": 3,
+        "n_features": 1,
+        "layers": [
+            {
+                "type": "LSTM",
+                "units": 100,
+                "activation": "relu"
+            },
+            {
+                "type": "Dense",
+                "units": 1
+            }
+        ],
+        "optimizer": "adam",
+        "loss": "mse",
+        "epochs": 200
+    }
+}
